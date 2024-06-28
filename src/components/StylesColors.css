@@ -1,0 +1,37 @@
+:root{
+    --NeutralWhite: #ece1e1;
+    --LightWhite: #fffefe;
+    --Dark: #272727;
+    --AbsoluteDark: #000000;
+
+    --LightBlue: #1434eb;
+    --DarkBlue: #0e2086;
+    
+    --SmoothDark: #00000085;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    color: var(--Dark);
+}
+
+h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--Dark);
+}
+
+p{
+    font-size: 20px;
+    font-weight: 350;
+    color: var(--AbsoluteDark);
+}
+
+label{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--AbsoluteDark);
+}
