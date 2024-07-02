@@ -1,5 +1,12 @@
 #rangeInput{
     margin-top: 0;
     margin-bottom: 1rem;
-    width: 100%;
+    padding: 0;
+    width: 500px;
+    cursor: pointer;
+}
+
+#rangeInput{
+    margin-top: 1rem;
+    background-color: red;
 }

@@ -32,6 +32,7 @@ h3{
     letter-spacing: 1px;
     font-weight: 400;
     color: var(--DarkBlue);
+    margin-bottom: 2rem;
 }
 
 
@@ -57,5 +58,5 @@ label{
 .ImportantParagraph{
     font-weight: 400;
     letter-spacing: -1px;
-    background-color: #0e2086;
+    text-shadow: 1px 1px 10px #0000004b;
 }

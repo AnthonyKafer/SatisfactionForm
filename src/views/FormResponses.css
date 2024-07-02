@@ -26,3 +26,7 @@
 .Encapsula:not(:last-child){
 border-bottom: 1px solid var(--SoftDark);
 }
+
+.Encapsula:last-child{
+    margin-bottom: 2rem;
+}

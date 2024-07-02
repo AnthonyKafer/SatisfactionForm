@@ -9,9 +9,41 @@ export function Send (){
             <p className="subParagraph">Para concluir sua avalição confira as informações e clique em Enviar:</p>
             <h3>Aqui está seu resumo:</h3>
             <div className="EvaluationResume">
-                <p className="ImportantParagraph">Seu nome:</p>
-                <p className="ImportantParagraph">Sua nota:</p>
-                <p className="ImportantParagraph">Seu comentário:</p>
+            <div className="Encapsula">
+                <div className="Field">
+                    <p className="ImportantParagraph">Nome:</p>
+                </div>
+                <div className="Response">
+                    <p>fodase</p>
+                </div>
+            </div>
+
+            <div className="Encapsula">
+                <div className="Field">
+                    <p className="ImportantParagraph">Email:</p>
+                </div>
+                <div className="Response">
+                    <p>fodase</p>
+                </div>
+            </div>
+
+            <div className="Encapsula">
+                <div className="Field">
+                    <p className="ImportantParagraph">Nota:</p>
+                </div>
+                <div className="Response">
+                    <p>fodase</p>
+                </div>
+            </div>
+
+            <div className="Encapsula">
+                <div className="Field">
+                    <p className="ImportantParagraph">Comentário:</p>
+                </div>
+                <div className="Response" >
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, nisi nam vitae aliquam id inventore aperiam quas animi est qui ab maiores perferendis odio laboriosam nulla eum sit veritatis voluptas.</p>
+                </div>
+            </div>     
             </div>
         </>
     )
