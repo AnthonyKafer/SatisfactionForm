@@ -4,18 +4,22 @@ import { DefaultBtn } from './components/DefaultBtn'
 import { TextInput } from './components/TextInput'
 import { LargeTextInput } from './components/LargeTextInput'
 import { Progress } from './components/Progress'
+import {GrFormNext, GrFormPrevious} from "react-icons/gr"
+import { UserLog } from './views/UserLog'
 
 function App() {
 
   return (
-    <>
-      <div>
-        <h1>Formulário</h1>
-      </div>
-      <form>
+    <div className='MajorContainer'>
+      <header>
         <Progress/>
-      </form>
-    </>
+      </header>
+      <UserLog/>
+      <div className='Buttons'>
+          <DefaultBtn text="Voltar" btnType="button"/>
+          <DefaultBtn text="Próximo" btnType="button" />
+      </div> 
+    </div>
   )
 }
 

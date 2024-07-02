@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    height: 50rem;
+}
+
+.MajorContainer{
+    background-color: beige;
+    width: 45vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 90%;
+    margin-bottom: 4rem;    
+}
+
+.Buttons{
+    display: flex;
+    width: 80%;
+    margin-top: 4rem;
+    justify-content: right;
+    gap: 2rem;
+}
