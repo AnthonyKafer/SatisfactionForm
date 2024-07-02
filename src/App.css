@@ -2,23 +2,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
     height: 50rem;
 }
 
 .MajorContainer{
-    background-color: beige;
-    width: 45vw;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    background-color: var(--NeutralWhite);
+    width: 60vw;
+    padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-bottom: 5px solid var( --SoftDark);
+    border-radius: 1rem 1rem 0 0 ;
+    box-shadow: 0px 0px 20px .5px var(--SmoothDark);
 }
 
 header{
-    width: 90%;
+    width: 100%;
     margin-bottom: 4rem;    
 }
 
@@ -28,4 +29,24 @@ header{
     margin-top: 4rem;
     justify-content: right;
     gap: 2rem;
+}
+
+.Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 2rem;
+    min-width: 70%;
+    text-align: left;
+}
+
+.Text p{
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Text label{
+    justify-content: left;
 }

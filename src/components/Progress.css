@@ -5,18 +5,20 @@
     justify-content: space-between;
     text-align: center;
     position: relative;
-    background-color: white;
 }
 
 .Step{
     font-size: 2rem;
     z-index: 1;
-    background-color: white;
+    background-color:var(--NeutralWhite);
+    padding: 0 1rem;
+    text-shadow: 0 0 10px var(--SmoothDark);
 }
 
 .Step p{
     font-size: 20px;
     font-style: italic;
+    margin-bottom: 0;
 }
 
 .StepsContainer::after{
@@ -24,7 +26,7 @@
     width: 100%;
     position: absolute;
     top: 50%;
-    border-bottom: 5px solid black;
+    border-bottom: 2px solid var(--SmoothDark);
 }
 
 .Step.active, .Step.active>p{

@@ -1,7 +1,7 @@
 import "./DefaultBtn.css"
 
-export function DefaultBtn ({btnType, text}){
+export function DefaultBtn ({btnType, text, event}){
     return(
-        <button type={btnType}>{text}</button>
+        <button type={btnType} onClick={event}>{text}</button>
     )
 } 
