@@ -1,14 +1,20 @@
 :root{
-    --NeutralWhite: #e9e9e9;
+    --NeutralWhite: #f5f4f4;
     --LightWhite: #fffefe;
     --Dark: #272727;
     --AbsoluteDark: #000000;
 
     --LightBlue: #1434eb;
     --DarkBlue: #0e2086;
+    --SmoothGreen: #5d8d51;
     
     --SmoothDark: #00000085;
     --SoftDark: rgba(46, 46, 46, 0.664);
+
+}
+
+a{
+    text-decoration: none;
 }
 
 h1{
@@ -41,6 +47,7 @@ p{
     font-weight: 350;
     color: var(--AbsoluteDark);
     margin-bottom: .5rem;
+    text-align: center;
 }
 
 label{

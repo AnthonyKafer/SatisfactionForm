@@ -2,10 +2,13 @@ import "./Progress.css"
 import { AiOutlineUser, AiOutlineStar} from "react-icons/ai"
 import { FiSend} from "react-icons/fi"
 
-export function Progress (){
+export function Progress ({assignedClass}){
+
+   
+
     return(
-        <div className="StepsContainer">
-            <div className="Step">
+        <div className={`StepsContainer ${assignedClass}`}>
+            <div className="Step completed" >
                 <AiOutlineUser/>
                 <p>Usuário</p>
             </div>

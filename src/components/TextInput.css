@@ -9,6 +9,8 @@ input{
     margin-top: 1rem;
     margin-bottom: 1rem;
     flex: 1;
+    min-width: 20rem;
     border: none;
     border-radius: .5rem;
+    box-shadow: 0 0 10px 0px var(--SmoothDark);
 }

@@ -1,9 +1,9 @@
 import "./DefaultBtn.css"
 
 
-export function DefaultBtn ({btnType, text, className, icon}){
+export function DefaultBtn ({btnType, text, icon, ...props}){
 
     return(
-        <button type={btnType} className={className}>{text} {icon}</button>
+        <button type={btnType} {...props} >{text} {icon}</button>
     )
 } 

@@ -6,7 +6,7 @@ export function Evaluation (){
     return(
         <>
         <h1>Avalie-nos!</h1>
-        <p>Abaixo coloque sua nota e seu comentário:</p>
+        <p>{"UserName"} abaixo coloque sua nota e seu comentário:</p>
         
         <EvaluationBar name="Selecione a nota:"/>
         <LargeTextInput name="Comentário:" placeHolder="Insira seu elogio, sugestão ou crítica aqui!"/>
