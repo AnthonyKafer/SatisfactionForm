@@ -3,9 +3,12 @@ import { AiOutlineUser, AiOutlineStar} from "react-icons/ai"
 import { FiSend} from "react-icons/fi"
 
 export function Progress (){
+
+   
+
     return(
-        <div className="StepsContainer">
-            <div className="Step">
+        <div className="StepsContainer secondStep">
+            <div className="Step" >
                 <AiOutlineUser/>
                 <p>Usuário</p>
             </div>

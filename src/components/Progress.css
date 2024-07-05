@@ -21,18 +21,41 @@
     margin-bottom: 0;
 }
 
+/* .Step,.Step>p{
+    opacity: .4;
+} */
+
 .StepsContainer::after{
     content: "";
-    width: 100%;
+    width: 0%;
     position: absolute;
     top: 50%;
-    border-bottom: 2px solid var(--SmoothDark);
+    left: 6.1rem;
+    border-bottom: 2px solid var(--SmoothGreen);
+    transition: 2s ease-in-out;
 }
 
+.StepsContainer.secondStep::after{
+    width: 40%;
+}
+
+.StepsContainer.thirdStep::after{
+    width: 85%;
+}
+
+
 .Step.active, .Step.active>p{
-    color: blue;
+    color: var(--DarkBlue);
+    opacity: 1;
+}
+
+.Step.active{
+    font-size: 2.5rem;
 }
 
 .Step.completed, .Step.completed>p{
-    color: rgb(65, 218, 98);
+    color: var(--SmoothGreen);
+    opacity: 1;
+    text-shadow: 0 0 20px var(--SmoothGreen);
+
 }

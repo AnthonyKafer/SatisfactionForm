@@ -1,12 +1,22 @@
 #rangeInput{
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
     padding: 0;
     width: 500px;
     cursor: pointer;
+    box-shadow: none;
 }
 
-#rangeInput{
-    margin-top: 1rem;
-    background-color: red;
+span{
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.low{
+    color: red;
+}
+
+.high{
+    color: var(--SmoothGreen);
 }
