@@ -1,10 +1,10 @@
 import "./Send.css"
 
 
-export function Send (){
+export function Send ({data}){
     return(
         <>
-            <h1>Fodase</h1>
+            <h1>Quase lá...</h1>
             <p>Sua opinião é muito importante para nós!</p>
             <p className="subParagraph">Para concluir sua avalição confira as informações e clique em Enviar:</p>
             <h3>Aqui está seu resumo:</h3>
@@ -14,7 +14,7 @@ export function Send (){
                     <p className="ImportantParagraph">Nome:</p>
                 </div>
                 <div className="Response">
-                    <p>fodase</p>
+                    <p>{data.name}</p>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@ export function Send (){
                     <p className="ImportantParagraph">Email:</p>
                 </div>
                 <div className="Response">
-                    <p>fodase</p>
+                    <p>{data.email}</p>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ export function Send (){
                     <p className="ImportantParagraph">Nota:</p>
                 </div>
                 <div className="Response">
-                    <p>fodase</p>
+                    <p>{data.note}</p>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ export function Send (){
                     <p className="ImportantParagraph">Comentário:</p>
                 </div>
                 <div className="Response" >
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, nisi nam vitae aliquam id inventore aperiam quas animi est qui ab maiores perferendis odio laboriosam nulla eum sit veritatis voluptas.</p>
+                    <p>{data.comentary}</p>
                 </div>
             </div>     
             </div>

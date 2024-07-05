@@ -1,10 +1,10 @@
 import "./TextInput.css"
 
-export function TextInput ({name, placheHolder}){
+export function TextInput ({name, placheHolder, value, onChange}){
     return(
         <label htmlFor="TextInput">{name}
         <input type="text" name="TextInput" 
-        placeholder={placheHolder}/>
+        placeholder={placheHolder} value={value} onChange={onChange}/>
         </label>
     )
 }

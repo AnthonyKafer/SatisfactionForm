@@ -41,7 +41,7 @@ header{
     text-align: left;
 }
 
-.Text.hidden{
+.Buttons.hidden, .Text.hidden, header.hidden{
     display: none;
 }
 
