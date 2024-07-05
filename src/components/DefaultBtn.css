@@ -25,3 +25,8 @@ button:active{
     background-color: var(--DarkBlue);
     box-shadow: 1px 1px 4px var(--SmoothDark) ;
 }
+
+button:disabled{
+    opacity: .2;
+    background-color: var(--DarkBlue);
+}

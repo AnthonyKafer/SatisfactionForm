@@ -41,11 +41,11 @@ header{
     text-align: left;
 }
 
-.content.hidden{
+.Text.hidden{
     display: none;
 }
 
-.content.active{
+.Text.active{
     display: block;
 }
 
