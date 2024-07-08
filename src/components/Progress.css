@@ -46,3 +46,10 @@
     text-shadow: 0 0 20px var(--SmoothGreen);
 
 }
+
+@media (max-width: 600px) {
+    .Step{
+        font-size: 20px;
+        padding: 0;
+    }
+}

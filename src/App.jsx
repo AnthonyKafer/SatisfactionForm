@@ -1,4 +1,4 @@
-import { Children, useState } from 'react'
+import { Children, useCallback, useEffect, useState } from 'react'
 import './App.css'
 import { DefaultBtn } from './components/DefaultBtn'
 import { Progress } from './components/Progress'
@@ -9,6 +9,7 @@ import { Send } from './views/Send'
 import { Link, Outlet } from 'react-router-dom'
 import { FormResponses } from './views/FormResponses'
 import { Thanks } from './views/Thanks'
+import { SendData } from './hook/SendData'
 
 
 const ReponsesData = {
@@ -18,9 +19,11 @@ const ReponsesData = {
   comentary:"",
 }
 
+
 function App() {
 
   const [data, setData] = useState(ReponsesData)
+
 
   const updateInputs = (keys, values)=>{
     setData((prev)=>{
@@ -32,18 +35,20 @@ function App() {
   const views = [<UserLog data={data} updateInputs={updateInputs}/>,
       <Evaluation data={data} updateInputs={updateInputs}/>,
       <Send data={data} />, 
-      <Thanks/>,
+      <Thanks data={data}/>,
       <FormResponses data={data}/>]
 
-  
-
-  
-
-
   function updateView(a){
+    console.log("Stepprevious:",step)
       setStep(old => a> 1? old + 1: old - 1)
+      console.log("Step:",step)
   }
 
+  {document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && event.code === 'Space') {
+        setStep(4) 
+    }
+})}
   
   return (
 
@@ -51,21 +56,22 @@ function App() {
       <header className={step===3 || step>3? "hidden":""}>
         <Progress classname={ step === 1? "secondStep": step ===2? "thirdStep": step===3? "hidden" : ""}/>
       </header>
+
+
       <form className="Text">
-      {/* {document.addEventListener("keypress", (e)=>{
-          if (e.shiftKey ){
-            setStep(4)
-          }
-          return
-      })} */}
+
       {views[step]}
       
-      <div className='Buttons'>
-          <DefaultBtn className={step===3 ||step>3?  "hidden":""} icon={<GrFormPrevious/>} text="Voltar" btnType="button" disabled={ step===0? true: false } onClick={()=> updateView(1)}/>
-          <DefaultBtn className={step===3 || step>3?  "hidden":""} text={ step==2? "Enviar": "Próximo" }btnType="button" icon={<GrFormNext/>}  disabled={ step===3? true: false }  onClick={()=>updateView(2)}/>
+      <div className={step===3 || step>3?  "hidden":"Buttons"}>
+          <DefaultBtn className={step===3 ||step>3?  "hidden":""} icon={<GrFormPrevious/>} 
+          text="Voltar" btnType="button" disabled={ step===0? true: false} onClick={()=> updateView(1)}/>
+
+          <DefaultBtn text="Próximo" 
+         icon={<GrFormNext/>}  disabled={step===3 || !data.name? true: false }  onClick={()=>updateView(2)}
+          btnType="button"/>
       </div> 
       </form>
-      {console.log(data.note)}
+      
     </div>
   )
 }

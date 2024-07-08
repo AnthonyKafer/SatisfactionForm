@@ -1,32 +1,15 @@
-.EvaluationResume{
-    display: flex;
+.Container{
     width: 100%;
-    flex-direction: column;
 }
 
-.Encapsula{
+.Name{
     display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--SoftDark);
 }
 
-.Field{
-    min-width: 30%;
-    padding: .5rem 1rem;
-}
-
-.Response{
-    flex: 1;
-    padding: .5rem 1rem;
-}
-
-.Response p, .Field p{
-    margin-bottom: 0;
-    text-align: left;
-}
-
-.Encapsula:not(:last-child){
-border-bottom: 1px solid var(--SoftDark);
-}
-
-.Encapsula:last-child{
-    margin-bottom: 2rem;
+.Field:last-child{
+    border-bottom: 5px solid var(--SoftDark);
+    margin-bottom: 5rem;
 }

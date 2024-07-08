@@ -1,9 +1,9 @@
 import "./DefaultBtn.css"
 
 
-export function DefaultBtn ({btnType, text, icon, disabled, ...props}){
+export function DefaultBtn ({btnType, text, icon, disabled, onClick}){
 
     return(
-        <button type={btnType} disabled={disabled} {...props}>{text} {icon}</button>
+        <button type={btnType} disabled={disabled} onClick={onClick} >{text} {icon}</button>
     )
 } 

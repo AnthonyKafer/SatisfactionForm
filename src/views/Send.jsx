@@ -1,3 +1,4 @@
+import { DefaultBtn } from "../components/DefaultBtn"
 import "./Send.css"
 
 
@@ -23,7 +24,7 @@ export function Send ({data}){
                     <p className="ImportantParagraph">Email:</p>
                 </div>
                 <div className="Response">
-                    <p>{data.email}</p>
+                    <p>{data.emai || "Nulo"}</p>
                 </div>
             </div>
 
@@ -41,7 +42,7 @@ export function Send ({data}){
                     <p className="ImportantParagraph">Comentário:</p>
                 </div>
                 <div className="Response" >
-                    <p>{data.comentary}</p>
+                    <p>{data.comentary || "Nulo"}</p>
                 </div>
             </div>     
             </div>
