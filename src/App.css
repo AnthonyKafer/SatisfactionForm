@@ -3,6 +3,8 @@ body{
     padding: 5%;
     align-items: center;
     justify-content: center;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .MajorContainer{
@@ -41,7 +43,7 @@ header{
     text-align: left;
 }
 
-.Text.hidden{
+.Buttons.hidden, .Text.hidden, header.hidden{
     display: none;
 }
 
@@ -57,4 +59,14 @@ header{
 
 .Text label{
     justify-content: left;
+}
+
+@media (max-width: 700px) {
+    .MajorContainer{
+        font-size: 20px;
+        width: 90%;
+        padding: 10px;
+        box-shadow: none;
+    }
+    
 }

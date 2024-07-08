@@ -8,7 +8,7 @@ button{
     background-color: var(--LightBlue);
     opacity: .7;
     transition: .2s;
-    min-width: 150px;
+    min-width: 30%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -29,4 +29,8 @@ button:active{
 button:disabled{
     opacity: .2;
     background-color: var(--DarkBlue);
+}
+
+.hidden{
+    display: none;
 }
